@@ -19,6 +19,11 @@ class Stopwatch {
         }
     }
     
+    var elapsedTimeAsString: String {
+        return String(format: "%02d:%02d.%d",
+            Int(elapsedTime / 60), Int(elapsedTime % 60), Int(elapsedTime * 10 % 10))
+    }
+    
     var isRunning: Bool {
         return startTime != nil
     }
