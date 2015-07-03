@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.github.com/SwiftEducation/Stopwatch/master/Stopwatch/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x.png" />
+<img align="right" src="https://github.com/SwiftEducation/Stopwatch/raw/master/Stopwatch/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x.png" />
 
 # Stopwatch
 
@@ -8,7 +8,7 @@ Lead students in thinking deeper about models, views, controllers, and users. Te
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
