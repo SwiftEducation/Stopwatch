@@ -22,17 +22,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func startButtonTapped(sender: UIButton) {
-        NSTimer.scheduledTimerWithTimeInterval(0.1, target: self,
-            selector: "updateElapsedTimeLabel:", userInfo: nil, repeats: true)
+    @IBAction func startButtonTapped(_ sender: UIButton) {
+        Timer.scheduledTimer(timeInterval: 0.1, target: self,
+            selector: #selector(ViewController.updateElapsedTimeLabel(_:)), userInfo: nil, repeats: true)
         stopwatch.start()
     }
     
-    @IBAction func stopButtonTapped(sender: UIButton) {
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
         stopwatch.stop()
     }
     
-    func updateElapsedTimeLabel(timer: NSTimer) {
+    func updateElapsedTimeLabel(_ timer: Timer) {
         if stopwatch.isRunning {
             elapsedTimeLabel.text = stopwatch.elapsedTimeAsString
         } else {
