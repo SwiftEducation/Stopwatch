@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func startButtonTapped(sender: UIButton) {
+    @IBAction func startButtonTapped(_ sender: UIButton) {
         print("Starting stopwatch")
         stopwatch.start()
         while stopwatch.isRunning {
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func stopButtonTapped(sender: UIButton) {
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
         print(stopwatch.elapsedTime)
         stopwatch.stop()
     }
