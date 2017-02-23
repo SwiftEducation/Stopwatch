@@ -8,23 +8,23 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 import Foundation
 
 class Stopwatch {
-    
-    private var startTime: NSDate?
 
-    var elapsedTime: NSTimeInterval {
+    private var startTime: Date?
+
+    var elapsedTime: TimeInterval {
         if let startTime = self.startTime {
             return -startTime.timeIntervalSinceNow
         } else {
             return 0
         }
     }
-    
+
     func start() {
-        startTime = NSDate()
+        startTime = Date()
     }
-    
+
     func stop() {
         startTime = nil
     }
-    
+
 }
